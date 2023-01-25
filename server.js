@@ -63,7 +63,6 @@ app.post('/signup', async (req, res) => {
     residenza,
   })
   const result = await newUser.save()
-  console.log(result)
 
   return res.status(200).send({ message: 'user successfully logged' })
 })
